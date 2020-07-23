@@ -1,4 +1,4 @@
-n=int(input("enter a number"))
+num=int(input("enter a number"))
 if num < 0:
    print("Enter a positive number")
 else:
@@ -8,3 +8,20 @@ else:
        sum += num
        num -= 1
    print("The sum is", sum)
+
+
+# Program to check if a number is prime or not
+
+nnm=int(input("enter a number"))
+
+if num > 1:
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+else:
+   print(num,"is not a prime number")
